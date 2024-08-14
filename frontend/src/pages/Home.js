@@ -17,7 +17,7 @@ const Home = () => {
           'Authorization': `Bearer ${user.token}`
         }
       })
-      console.log(response)
+    
       const json = await response.json()
 
       if (response.ok) {
