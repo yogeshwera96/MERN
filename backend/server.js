@@ -12,7 +12,7 @@ const cors = require('cors')
 
 
 
-app.use(cors(corsOptions));
+
 
 // middleware
 app.use(express.json())
@@ -23,8 +23,8 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/api/workouts', workoutRoutes)
-app.use('/api/user', userRoutes)
+app.use('https://mern-nhxb.onrender.com/api/workouts', workoutRoutes)
+app.use('https://mern-nhxb.onrender.com/api/user', userRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
