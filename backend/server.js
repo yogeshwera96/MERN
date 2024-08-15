@@ -10,11 +10,7 @@ const app = express()
 
 const cors = require('cors')
 
-const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // or your frontend URL
-  optionsSuccessStatus: 200
-};
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:4000';
+
 
 app.use(cors(corsOptions));
 
