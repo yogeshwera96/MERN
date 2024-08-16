@@ -10,7 +10,7 @@ export const useSignup = () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await fetch('https://mern-nhxb.onrender.com/user/signup', {
+    const response = await fetch('https://mern-nhxb.onrender.com', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ email, password })
