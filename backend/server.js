@@ -8,7 +8,11 @@ const userRoutes = require('./routes/user')
 // express app
 const app = express()
 
-const cors = require('cors')
+app.use(cors({
+    origin: 'https://mern-1-front-n3k2.onrender.com', // or '*'
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 
 
 
